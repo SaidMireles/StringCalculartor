@@ -9,13 +9,23 @@ public class StringTestCalculator {
 	@Test
 	
 	public void validaCadena () {
-		
 	 	StringCalculator cadenaCalc = new StringCalculator();	
-	 	assertEquals("java.lang.String",cadenaCalc.agrega("") ); 
-	 	assertEquals("java.lang.String",cadenaCalc.agrega("1,2") ); 
-	 	assertEquals("java.lang.String",cadenaCalc.agrega("1.2") ); 
-	 	assertEquals("java.lang.String",cadenaCalc.agrega("1.1,2.2") ); 
-	 	
+		 	assertEquals("java.lang.String",cadenaCalc.agrega("") ); 
+		 	assertEquals("java.lang.String",cadenaCalc.agrega("1,2") ); 
+		 	assertEquals("java.lang.String",cadenaCalc.agrega("1.2") ); 
+		 	assertEquals("java.lang.String",cadenaCalc.agrega("1.1,2.2") ); 
 	}
+	
+	
+	@Test
+	
+	public void validaComas() {
 		
+	 	StringCalculator cadenaComas = new StringCalculator();	
+		 	assertEquals("",cadenaComas.validaComas("") ); 
+		 	assertEquals("12",cadenaComas.validaComas("1,2") ); 
+		 	assertEquals("1.2",cadenaComas.validaComas("1.2") ); 
+		 	assertEquals("1.12.2",cadenaComas.validaComas("1.1,2.2") ); 
+		 	assertEquals("1.12.2",cadenaComas.validaComas("1.1,2.2,") ); 
+	}
 }

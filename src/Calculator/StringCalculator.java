@@ -9,17 +9,33 @@ package Calculator;
  */
 
 public class StringCalculator {
+
 	public String agrega(String stgCadena) {
 		
-		String tipoDato = "";
 		
-		tipoDato = stgCadena.getClass().getName();
+		String valor = validaString(stgCadena);
+		return valor;
 		
-		
-		
-		
-		return tipoDato;
+		//String[] sinComas = validaComas(tipoDato);
+	    //return sinComas;
 		
 	}
 
+public String validaString(String stgCadena) {
+		
+		String tipoDato = stgCadena.getClass().getName();
+		if (tipoDato == "java.lang.String") {
+			return tipoDato;			
+		}
+		return null;
+	}
+	
+public String validaComas(String stgCadena) {
+		
+	String[] sinComas = stgCadena.split(",");
+
+		return sinComas.toString();
+	}
+
+		
 }
