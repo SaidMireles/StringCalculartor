@@ -9,6 +9,10 @@ package Calculator;
  */
 
 public class StringCalculator {
-	int testeando;
+	public String agrega(String stgCadena) {
+		
+		return stgCadena;
+		
+	}
 
 }
