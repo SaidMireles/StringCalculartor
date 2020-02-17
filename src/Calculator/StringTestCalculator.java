@@ -10,13 +10,12 @@ public class StringTestCalculator {
 	
 	public void validaCadena () {
 		
-	 	StringCalculator cadenaCalc = new StringCalculator();
-	 	
-	 	assertEquals("1,2",cadenaCalc.agrega("1,2") );
-
-	 	
+	 	StringCalculator cadenaCalc = new StringCalculator();	
+	 	assertEquals("java.lang.String",cadenaCalc.agrega("") ); 
+	 	assertEquals("java.lang.String",cadenaCalc.agrega("1,2") ); 
+	 	assertEquals("java.lang.String",cadenaCalc.agrega("1.2") ); 
+	 	assertEquals("java.lang.String",cadenaCalc.agrega("1.1,2.2") ); 
 	 	
 	}
-
-
+		
 }
