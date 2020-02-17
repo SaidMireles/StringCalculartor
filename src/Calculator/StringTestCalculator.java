@@ -32,4 +32,14 @@ public class StringTestCalculator {
 	 	//System.out.println(cadenaComas.validaComas("1.1,2.2"));
 	 	
 	}
+	
+	public void validaSaltos() {
+		
+	
+	}
+	
+	public void creaSuma() {
+		
+		
+	}
 }
