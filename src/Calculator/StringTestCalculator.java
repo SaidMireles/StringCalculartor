@@ -21,11 +21,15 @@ public class StringTestCalculator {
 	
 	public void validaComas() {
 		
+		System.out.println("hola mundo");
 	 	StringCalculator cadenaComas = new StringCalculator();	
-		 	assertEquals("",cadenaComas.validaComas("") ); 
-		 	assertEquals("12",cadenaComas.validaComas("1,2") ); 
+		 /*	assertEquals("",cadenaComas.validaComas("") ); 
+		 	assertEquals({},cadenaComas.validaComas("1,2") ); 
 		 	assertEquals("1.2",cadenaComas.validaComas("1.2") ); 
 		 	assertEquals("1.12.2",cadenaComas.validaComas("1.1,2.2") ); 
-		 	assertEquals("1.12.2",cadenaComas.validaComas("1.1,2.2,") ); 
+		 	assertEquals("1.12.2",cadenaComas.validaComas("1.1,2.2,") ); */
+	 	
+	 	//System.out.println(cadenaComas.validaComas("1.1,2.2"));
+	 	
 	}
 }

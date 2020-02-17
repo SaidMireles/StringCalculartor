@@ -30,11 +30,11 @@ public String validaString(String stgCadena) {
 		return null;
 	}
 	
-public String validaComas(String stgCadena) {
+public String[] validaComas(String stgCadena) {
 		
 	String[] sinComas = stgCadena.split(",");
-
-		return sinComas.toString();
+ 
+		return sinComas;
 	}
 
 		
