@@ -8,11 +8,11 @@ public class StringTestCalculator {
 
 	@Test
 	
-	void validaCadena (String stgCadena) {
+	public void validaCadena () {
 		
 	 	StringCalculator cadenaCalc = new StringCalculator();
 	 	
-	 	assertEquals("lalo",cadenaCalc.agrega("1,2") );
+	 	assertEquals("1,2",cadenaCalc.agrega("1,2") );
 
 	 	
 	 	
